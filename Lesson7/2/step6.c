@@ -15,8 +15,7 @@ int main(void)
             }
             scanf("%d",&i);
         }
-    printf("%d %d",max,min);
-          
+    printf("%d %d",max,min);       
 
     return 0;
 }
