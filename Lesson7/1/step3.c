@@ -8,5 +8,6 @@ int main(void)
             printf("%d ",K);
         }
     }
+    
     return 0;
 }
