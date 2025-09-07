@@ -10,7 +10,6 @@ int main(){
             printf("%d ",num);
         }
         g = num;
-
     }
     return 0;
 }
