@@ -11,6 +11,5 @@ int main(void)
         }
 
         printf("%d %d",arr[N-1], arr[0]);
-
         return 0;
 }
