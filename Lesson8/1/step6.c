@@ -10,4 +10,5 @@ int main(){
     for (int j = N-1; j >=0; j--){
         printf("%d ",mas[j]);
     }
+    return 0;
 }
