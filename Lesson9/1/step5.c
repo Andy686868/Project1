@@ -8,7 +8,6 @@ int main(){
     for (int k=0; k < N; k++){
         scanf(" %c",&mch[k]);
     }
-
     for (int i = 65; i <= 122; i++){
         
         for (int j = 0; j < N; j++){
