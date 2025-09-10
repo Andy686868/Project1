@@ -1,21 +1,34 @@
 #include <stdio.h>
 
 int main(){
-    int N,count = 0;
-    char ch;
-    
+    int N,count = 0,g;
+    int M[27] = {0};
     scanf("%d", &N);
-        for (int i = 0 ; i < N; i++){
-            scanf("%c",&ch);
-            printf("%d ",ch);
-            for (int m = 0 ; m < 27; m++){
-                m = m + 65;
-                if (ch == m || ch == m + 22){
-                count ++;
-                //printf("%d",m);
+    char mch[N+1];
+    for (int k=0; k < N; k++){
+        scanf(" %c",&mch[k]);
+    }
+
+    for (int i = 65; i <= 122; i++){
+        
+        for (int j = 0; j < N; j++){
+            if(mch[j] == i){
+                count++;
             }
-       }
-    } 
-    
-        return 0;
+        }
+        g = i;{
+        if (g <= 92){
+            M[g-65] += count;
+            }
+        else{
+            M[g-65-32] += count;
+            }
+        count = 0;
+        }
+    }
+
+    for (int j = 0; j<26; j++) {
+        printf("%d ",M[j]);
+    }
+    return 0;
 }
